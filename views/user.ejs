@@ -1,0 +1,6 @@
+<% if (locals.user) { %>
+  <% include say %>
+<% } %>
+  <% posts.forEach(function(posts){ %>
+    <% include posts %>
+  <% }) %>

@@ -1,0 +1,26 @@
+[Mon Jun 19 2017 16:42:17 GMT+0800 (中国标准时间)] /
+TypeError: D:\work\study\express-study\microblog\views\index.ejs:14
+    12| <% } %>
+    13| <% posts.forEach(function(posts){ %>
+ >> 14| <% include posts %>
+    15| <% }) %>
+    16| <div class="row">
+    17|   <div class="col-md-4">
+
+esc is not a function
+    at rethrow (D:\work\study\express-study\microblog\node_modules\ejs\lib\ejs.js:285:18)
+    at eval (eval at compile (D:\work\study\express-study\microblog\node_modules\ejs\lib\ejs.js:524:12), <anonymous>:73:9)
+    at eval (eval at compile (D:\work\study\express-study\microblog\node_modules\ejs\lib\ejs.js:524:12), <anonymous>:75:10)
+    at Array.forEach (native)
+    at eval (eval at compile (D:\work\study\express-study\microblog\node_modules\ejs\lib\ejs.js:524:12), <anonymous>:31:14)
+    at returnedFn (D:\work\study\express-study\microblog\node_modules\ejs\lib\ejs.js:555:17)
+    at tryHandleCache (D:\work\study\express-study\microblog\node_modules\ejs\lib\ejs.js:203:34)
+    at View.exports.renderFile [as engine] (D:\work\study\express-study\microblog\node_modules\ejs\lib\ejs.js:412:10)
+    at View.render (D:\work\study\express-study\microblog\node_modules\express\lib\view.js:128:8)
+    at tryRender (D:\work\study\express-study\microblog\node_modules\express\lib\application.js:640:10)
+    at EventEmitter.render (D:\work\study\express-study\microblog\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (D:\work\study\express-study\microblog\node_modules\express\lib\response.js:971:7)
+    at ServerResponse.res.render (D:\work\study\express-study\microblog\node_modules\express-partials\index.js:58:9)
+    at Post.get (D:\work\study\express-study\microblog\routes\index.js:12:9)
+    at collection.find.sort.toArray (D:\work\study\express-study\microblog\models\post.js:44:21)
+    at handleCallback (D:\work\study\express-study\microblog\node_modules\mongodb\lib\utils.js:120:56)

@@ -1,0 +1,80 @@
+[Tue Jun 20 2017 10:18:54 GMT+0800 (中国标准时间)] /
+TypeError: D:\work\study\express-study\microblog\views\index.ejs:14
+    12| <% } %>
+    13| <% posts.forEach(function(posts){ %>
+ >> 14| <% include posts %>
+    15| <% }) %>
+    16| <div class="row">
+    17|   <div class="col-md-4">
+
+esc is not a function
+    at rethrow (D:\work\study\express-study\microblog\node_modules\ejs\lib\ejs.js:285:18)
+    at eval (eval at compile (D:\work\study\express-study\microblog\node_modules\ejs\lib\ejs.js:524:12), <anonymous>:73:9)
+    at eval (eval at compile (D:\work\study\express-study\microblog\node_modules\ejs\lib\ejs.js:524:12), <anonymous>:75:10)
+    at Array.forEach (native)
+    at eval (eval at compile (D:\work\study\express-study\microblog\node_modules\ejs\lib\ejs.js:524:12), <anonymous>:31:14)
+    at returnedFn (D:\work\study\express-study\microblog\node_modules\ejs\lib\ejs.js:555:17)
+    at tryHandleCache (D:\work\study\express-study\microblog\node_modules\ejs\lib\ejs.js:203:34)
+    at View.exports.renderFile [as engine] (D:\work\study\express-study\microblog\node_modules\ejs\lib\ejs.js:412:10)
+    at View.render (D:\work\study\express-study\microblog\node_modules\express\lib\view.js:128:8)
+    at tryRender (D:\work\study\express-study\microblog\node_modules\express\lib\application.js:640:10)
+    at EventEmitter.render (D:\work\study\express-study\microblog\node_modules\express\lib\application.js:592:3)
+    at ServerResponse.render (D:\work\study\express-study\microblog\node_modules\express\lib\response.js:971:7)
+    at ServerResponse.res.render (D:\work\study\express-study\microblog\node_modules\express-partials\index.js:58:9)
+    at Post.get (D:\work\study\express-study\microblog\routes\index.js:12:9)
+    at collection.find.sort.toArray (D:\work\study\express-study\microblog\models\post.js:44:21)
+    at handleCallback (D:\work\study\express-study\microblog\node_modules\mongodb\lib\utils.js:120:56)
+[Tue Jun 20 2017 10:39:19 GMT+0800 (中国标准时间)] /
+MongoError: server instance in invalid state connected
+    at Function.MongoError.create (D:\work\study\express-study\microblog\node_modules\mongodb-core\lib\error.js:29:11)
+    at Server.connect (D:\work\study\express-study\microblog\node_modules\mongodb-core\lib\topologies\server.js:357:22)
+    at Server.connect (D:\work\study\express-study\microblog\node_modules\mongodb\lib\server.js:368:17)
+    at open (D:\work\study\express-study\microblog\node_modules\mongodb\lib\db.js:228:19)
+    at Db.open (D:\work\study\express-study\microblog\node_modules\mongodb\lib\db.js:251:44)
+    at Function.get (D:\work\study\express-study\microblog\models\post.js:16:17)
+    at D:\work\study\express-study\microblog\routes\index.js:8:8
+    at Layer.handle [as handle_request] (D:\work\study\express-study\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\work\study\express-study\microblog\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\work\study\express-study\microblog\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\work\study\express-study\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:47:12)
+[Tue Jun 20 2017 10:39:19 GMT+0800 (中国标准时间)] /
+MongoError: server instance in invalid state connected
+    at Function.MongoError.create (D:\work\study\express-study\microblog\node_modules\mongodb-core\lib\error.js:29:11)
+    at Server.connect (D:\work\study\express-study\microblog\node_modules\mongodb-core\lib\topologies\server.js:357:22)
+    at Server.connect (D:\work\study\express-study\microblog\node_modules\mongodb\lib\server.js:368:17)
+    at open (D:\work\study\express-study\microblog\node_modules\mongodb\lib\db.js:228:19)
+    at Db.open (D:\work\study\express-study\microblog\node_modules\mongodb\lib\db.js:251:44)
+    at Function.get (D:\work\study\express-study\microblog\models\post.js:16:17)
+    at D:\work\study\express-study\microblog\routes\index.js:8:8
+    at Layer.handle [as handle_request] (D:\work\study\express-study\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\work\study\express-study\microblog\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\work\study\express-study\microblog\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\work\study\express-study\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:47:12)
+[Tue Jun 20 2017 11:26:46 GMT+0800 (中国标准时间)] /reg
+Error: Failed to lookup view "reg" in views directory "D:\work\study\express-study\microblog\views"
+    at EventEmitter.render (D:\work\study\express-study\microblog\node_modules\express\lib\application.js:580:17)
+    at ServerResponse.render (D:\work\study\express-study\microblog\node_modules\express\lib\response.js:971:7)
+    at ServerResponse.res.render (D:\work\study\express-study\microblog\node_modules\express-partials\index.js:58:9)
+    at router.get (D:\work\study\express-study\microblog\routes\reg.js:5:9)
+    at Layer.handle [as handle_request] (D:\work\study\express-study\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\work\study\express-study\microblog\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\work\study\express-study\microblog\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\work\study\express-study\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\work\study\express-study\microblog\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:317:13)
+    at D:\work\study\express-study\microblog\node_modules\express\lib\router\index.js:284:7

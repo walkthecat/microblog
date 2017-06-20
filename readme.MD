@@ -12,11 +12,11 @@
 
 ### 运行
 
-单线程版
+单线程
 
     node ./bin/www 或 npm start
 
-多线程版
+多线程
 
     node cluster
 

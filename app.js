@@ -126,7 +126,7 @@ app.use(function (err, req, res, next) {
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
   //增加错误日志
-  var meta = '[' + new Date() + '] ' + req.url + '\n';
+  var meta = '[' + new Date().toLocaleString() + '] ' + req.url + '\n';
   errorLogfile.write(meta + err.stack + '\n');
 
   // render the error page

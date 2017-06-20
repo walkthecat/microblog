@@ -15,7 +15,7 @@ router.get('/', function (req, res, next) {
       error: req.flash('error').toString(),
       success: req.flash('success').toString(),
       user: req.session.user,
-      layout: 'layout'
+      url: req.baseUrl.substr(1),
     });
   });
 });

@@ -3,7 +3,7 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser'); 
+var bodyParser = require('body-parser');
 var settings = require('./settings');
 var session = require("express-session");
 var MongoStore = require('connect-mongo')(session);
@@ -47,15 +47,15 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 //是否使用生产模式
 //app.set('env', 'production');
- 
+
 app.use(flash());
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 //自定义日志格式
-logger.token('zdate', function(req, res){
-    return new Date().toLocaleString() || '-';
+logger.token('zdate', function (req, res) {
+  return new Date().toLocaleString() || '-';
 });
 logger.format('J', '[J] :remote-addr - :remote-user [:zdate] ":method :url HTTP/:http-version" :status :res[content-length] ":referrer" ":user-agent"')
 app.use(logger('dev'));
@@ -99,7 +99,7 @@ app.use('/logout', checkLogin);
 app.use('/logout', logout);
 
 app.use(function (req, res, next) {
-  console.log(req.session.user);
+  //console.log(req.url);
   res.locals.user = req.session.user;
   res.locals.post = req.session.post;
   var error = req.flash('error');

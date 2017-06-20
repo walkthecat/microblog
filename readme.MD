@@ -1,7 +1,7 @@
 ## 根据《Node.js开发指南》做的练习
     
     涉及到的版本为
-    express4.x + bootstrap 3.3.7 + mongodb 3.4
+    express4.15.0 + bootstrap 3.3.7 + mongodb 3.4
 
 ### 说明
 
